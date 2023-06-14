@@ -1,0 +1,14 @@
+F:\FivProjects\LinkedInClone\Data\bin\Debug\net6.0\Data.deps.json
+F:\FivProjects\LinkedInClone\Data\bin\Debug\net6.0\Data.runtimeconfig.json
+F:\FivProjects\LinkedInClone\Data\bin\Debug\net6.0\Data.dll
+F:\FivProjects\LinkedInClone\Data\bin\Debug\net6.0\Data.pdb
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.csproj.AssemblyReference.cache
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.AssemblyInfoInputs.cache
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.AssemblyInfo.cs
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.csproj.CoreCompileInputs.cache
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.dll
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\refint\Data.dll
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.pdb
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\Data.genruntimeconfig.cache
+F:\FivProjects\LinkedInClone\Data\obj\Debug\net6.0\ref\Data.dll

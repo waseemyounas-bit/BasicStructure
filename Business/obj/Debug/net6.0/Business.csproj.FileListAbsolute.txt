@@ -1,0 +1,17 @@
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+F:\FivProjects\LinkedInClone\Business\bin\Debug\net6.0\Business.deps.json
+F:\FivProjects\LinkedInClone\Business\bin\Debug\net6.0\Business.dll
+F:\FivProjects\LinkedInClone\Business\bin\Debug\net6.0\Business.pdb
+F:\FivProjects\LinkedInClone\Business\bin\Debug\net6.0\Data.dll
+F:\FivProjects\LinkedInClone\Business\bin\Debug\net6.0\DataAccess.dll
+F:\FivProjects\LinkedInClone\Business\bin\Debug\net6.0\DataAccess.pdb
+F:\FivProjects\LinkedInClone\Business\bin\Debug\net6.0\Data.pdb
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.csproj.CopyComplete
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.dll
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\refint\Business.dll
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\Business.pdb
+F:\FivProjects\LinkedInClone\Business\obj\Debug\net6.0\ref\Business.dll

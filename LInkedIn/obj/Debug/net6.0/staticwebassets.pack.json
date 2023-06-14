@@ -1,0 +1,577 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LInkedIn.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LInkedIn.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\flower-watercolor-painting-clip-art-hand-painted-watercolor-flower-pink-b5b871eabdac019b035735a2a3eeeae0_4a0d.png",
+      "PackagePath": "staticwebassets\\Uploads\\flower-watercolor-painting-clip-art-hand-painted-watercolor-flower-pink-b5b871eabdac019b035735a2a3eeeae0_4a0d.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\logo_3d32.jpeg",
+      "PackagePath": "staticwebassets\\Uploads\\logo_3d32.jpeg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\logo_3e78.jpeg",
+      "PackagePath": "staticwebassets\\Uploads\\logo_3e78.jpeg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\logo_b12c.jpeg",
+      "PackagePath": "staticwebassets\\Uploads\\logo_b12c.jpeg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\pilgrims_2c2f.png",
+      "PackagePath": "staticwebassets\\Uploads\\pilgrims_2c2f.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\pilgrims_8782.png",
+      "PackagePath": "staticwebassets\\Uploads\\pilgrims_8782.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\pilgrims_8997.png",
+      "PackagePath": "staticwebassets\\Uploads\\pilgrims_8997.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\pilgrims_9b1e.png",
+      "PackagePath": "staticwebassets\\Uploads\\pilgrims_9b1e.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\pilgrims_c6df.png",
+      "PackagePath": "staticwebassets\\Uploads\\pilgrims_c6df.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\pilgrims_dfcf.png",
+      "PackagePath": "staticwebassets\\Uploads\\pilgrims_dfcf.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\Uploads\\pilgrims_e191.png",
+      "PackagePath": "staticwebassets\\Uploads\\pilgrims_e191.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\ads1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\ads1.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\1.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\2.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\3.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\4.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\5.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\6.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\7.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\8.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\blog\\9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\9.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\chart.png",
+      "PackagePath": "staticwebassets\\assets\\img\\chart.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\clogo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clogo.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\clogo2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\clogo2.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\company-profile.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\company-profile.jpg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\e1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\e1.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\e2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\e2.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\fav.png",
+      "PackagePath": "staticwebassets\\assets\\img\\fav.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\job-profile.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\job-profile.jpg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\job1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\job1.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l1.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l2.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l3.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l4.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l5.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l6.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l7.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\l8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l8.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.svg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p1.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p10.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p11.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p11.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p12.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p12.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p13.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p13.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p2.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p3.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p4.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p5.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p6.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p7.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p8.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\p9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\p9.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\post1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post1.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\user.png",
+      "PackagePath": "staticwebassets\\assets\\img\\user.png"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\user\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\1.jpg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\user\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\2.jpg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\user\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\3.jpg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\user\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\4.jpg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\img\\user\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\5.jpg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\js\\osahan.js",
+      "PackagePath": "staticwebassets\\assets\\js\\osahan.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\js\\rocket-loader.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\rocket-loader.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\icons\\feather.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\icons\\feather.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\icons\\fonts\\Feather144f.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\icons\\fonts\\Feather144f.svg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\icons\\fonts\\Feather144f.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\icons\\fonts\\Feather144f.ttf"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\icons\\fonts\\Feather144f.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\icons\\fonts\\Feather144f.woff"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\ajax-loader.gif"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\fonts\\slick.eot"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\fonts\\slick.svg"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\fonts\\slick.woff"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\fonts\\slickd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\fonts\\slickd41d.eot"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\slick-theme.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\slick-theme.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\slick.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\slick.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\assets\\vendor\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\slick\\slick.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\FivProjects\\LinkedInClone\\LInkedIn\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.LInkedIn.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.LInkedIn.props",
+      "PackagePath": "build\\LInkedIn.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.LInkedIn.props",
+      "PackagePath": "buildMultiTargeting\\LInkedIn.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.LInkedIn.props",
+      "PackagePath": "buildTransitive\\LInkedIn.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

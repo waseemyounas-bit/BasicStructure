@@ -1,0 +1,15 @@
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+F:\FivProjects\LinkedInClone\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+F:\FivProjects\LinkedInClone\DataAccess\bin\Debug\net6.0\DataAccess.dll
+F:\FivProjects\LinkedInClone\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+F:\FivProjects\LinkedInClone\DataAccess\bin\Debug\net6.0\Data.dll
+F:\FivProjects\LinkedInClone\DataAccess\bin\Debug\net6.0\Data.pdb
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.dll
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+F:\FivProjects\LinkedInClone\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

@@ -1,0 +1,599 @@
+﻿@model User
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using System.Text.Json;
+@{
+    ViewData["Title"] = "Home Page";
+    var jobs = ViewData["jobs"] as List<Post>;
+    var posts = ViewData["posts"] as List<Post>;
+    var users = ViewData["users"] as List<User>;
+}
+
+<div class="row">
+
+    <main class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+        <form asp-action="AddPost" asp-controller="Home" method="post" id="postForm">
+            <div class="box shadow-sm border rounded bg-white mb-3 osahan-share-post">
+                <ul class="nav nav-justified border-bottom osahan-line-tab" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="feather-edit"></i> Share an update</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="feather-image"></i> Upload a photo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="feather-clipboard"></i> Write an post</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="p-3 d-flex align-items-center w-100" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="@Model.ProfileImage" alt>
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div class="w-100">
+                                <input type="hidden" name="UserId" value="@Model.Id" />
+<textarea placeholder="Write your thoughts..." class="form-control border-0 p-0 shadow-none" name="Description" data-rule-required="true" rows="1"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    @*<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="p-3 w-100">
+                    <textarea placeholder="Write your thoughts..." class="form-control border-0 p-0 shadow-none" rows="3"></textarea>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="p-3 w-100">
+                    <textarea placeholder="Write a post..." class="form-control border-0 p-0 shadow-none" rows="3"></textarea>
+                    </div>
+                    </div>*@
+                </div>
+                <div class="border-top p-3 d-flex align-items-center">
+                    <div class="mr-auto"><a href="#" class="text-link small" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="feather-map-pin"></i> Add Location</a></div>
+                    <div class="flex-shrink-1">
+                        @*<button type="button" class="btn btn-light btn-sm">Preview</button>*@
+                        <button type="submit" class="btn btn-primary btn-sm">Post Status</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        @if (posts.Count > 0)
+        {
+            foreach (var item in posts)
+            {
+                <div class="box shadow-sm border rounded bg-white mb-3 osahan-post">
+                    <div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="@item.User.ProfileImage" alt>
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div class="font-weight-bold">
+                            <div class="text-truncate">@item.User.FirstName @item.User.LastName</div>
+                            <div class="small text-gray-500">@item.Title</div>
+                        </div>
+                        <span class="ml-auto small">@item.CreatedDate.ToShortDateString()</span>
+                    </div>
+                    <div class="p-3 border-bottom osahan-post-body">
+                        <p class="mb-0">@item.Description</p>
+                    </div>
+                    <div class="p-3 border-bottom osahan-post-footer">
+                        <a href="#" class="mr-3 text-secondary"><i class="feather-heart text-danger"></i> 16</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="feather-message-square"></i> 8</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="feather-share-2"></i> 2</a>
+                    </div>
+                    <div class="p-3">
+                        <button type="button" class="btn btn-outline-primary btn-sm mr-1">Awesome!!</button>
+                        <button type="button" class="btn btn-light btn-sm mr-1">😍</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm mr-1">Whats it about?</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm mr-1">Oooo Great Wow</button>
+                    </div>
+                </div>
+                break;
+            }
+        }
+
+        <div class="mb-3 shadow-sm rounded box bg-white osahan-slider-main">
+            <div class="osahan-slider">
+                @if (jobs.Count > 0)
+                {
+                    foreach (var item in jobs)
+                    {
+                        <div class="osahan-slider-item">
+                            <a href="javascript:void()">
+                                <div class="shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3">
+                                    <div class="d-flex align-items-center p-3 job-item-header">
+                                        <div class="overflow-hidden mr-2">
+                                            <h6 class="font-weight-bold text-dark mb-0 text-truncate">@item.Title</h6>
+                                            <div class="text-truncate text-primary">@item.CompanyName</div>
+                                            <div class="small text-gray-500"><i class="feather-map-pin"></i> @item.Location</div>
+                                        </div>
+                                        <img class="img-fluid ml-auto" src="https://source.unsplash.com/random/150x150?person" alt>
+                                    </div>
+                                    <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+                                        <div class="overlap-rounded-circle d-flex">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p1.png" alt data-original-title="Sophia Lee">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p2.png" alt data-original-title="John Doe">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p3.png" alt data-original-title="Julia Cox">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p4.png" alt data-original-title="Robert Cook">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p5.png" alt data-original-title="Sophia Lee">
+                                        </div>
+                                        <span class="font-weight-bold text-primary">18 connections</span>
+                                    </div>
+                                    <div class="p-3 job-item-footer">
+                                        <small class="text-gray-500"><i class="feather-clock"></i> Posted: @item.CreatedDate.ToShortDateString()</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        @if (posts.Count > 0)
+        {
+            foreach (var item in posts)
+            {
+                <div class="box shadow-sm border rounded bg-white mb-3 osahan-post">
+                    <div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="@item.User.ProfileImage" alt>
+                            <div class="status-indicator bg-success"></div>
+                        </div>
+                        <div class="font-weight-bold">
+                            <div class="text-truncate">@item.User.FirstName @item.User.LastName</div>
+                            <div class="small text-gray-500">@item.Title</div>
+                        </div>
+                        <span class="ml-auto small">@item.CreatedDate.ToShortDateString()</span>
+                    </div>
+                    <div class="p-3 border-bottom osahan-post-body">
+                        <p class="mb-0">@item.Description</p>
+                    </div>
+                    <div class="p-3 border-bottom osahan-post-footer">
+                        <a href="#" class="mr-3 text-secondary"><i class="feather-heart text-danger"></i> 16</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="feather-message-square"></i> 8</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="feather-share-2"></i> 2</a>
+                    </div>
+                    <div class="p-3">
+                        <button type="button" class="btn btn-outline-primary btn-sm mr-1">Awesome!!</button>
+                        <button type="button" class="btn btn-light btn-sm mr-1">😍</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm mr-1">Whats it about?</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm mr-1">Oooo Great Wow</button>
+                    </div>
+                </div>
+                break;
+            }
+        }
+    </main>
+    <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
+        <div class="box mb-3 shadow-sm border rounded bg-white profile-box text-center">
+            <div class="py-4 px-3 border-bottom">
+                <div class="profile-pic-wrapper">
+                    <div class="pic-holder">
+                        @if (!string.IsNullOrEmpty(Model.ProfileImage))
+                        {
+                            <!-- uploaded pic shown here -->
+                            <img id="profilePic" class="pic" src="@Model.ProfileImage">
+                        }
+                        else
+                        {
+                            <!-- uploaded pic shown here -->
+                            <img id="profilePic" class="pic" src="https://source.unsplash.com/random/150x150?person">
+                        }
+
+                        <Input class="uploadProfileInput" type="file" name="profile_pic" id="newProfilePhoto" accept="image/*" style="opacity: 0;" />
+                        <label for="newProfilePhoto" class="upload-file-block">
+                            <div class="text-center">
+                                <div class="mb-2">
+                                    <i class="fa fa-camera fa-2x"></i>
+                                </div>
+                                <div class="text-uppercase">
+                                    Update <br /> Profile Photo
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <h5 class="font-weight-bold text-dark mb-1 mt-4">@Model.FirstName @Model.LastName</h5>
+                    <p class="mb-0 text-muted">@Model.Title</p>
+                </div>
+                <div class="d-flex">
+                    <div class="col-6 border-right p-3">
+                        <h6 class="font-weight-bold text-dark mb-1">@Model.connectionCount</h6>
+                        <p class="mb-0 text-black-50 small">Connections</p>
+                    </div>
+                    <div class="col-6 p-3">
+                        <h6 class="font-weight-bold text-dark mb-1">85</h6>
+                        <p class="mb-0 text-black-50 small">Views</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden border-top">
+                    <a class="font-weight-bold p-3 d-block" href="javascript:void()" data-toggle="modal" data-target="#professionModal"> Add your profession </a>
+                </div>
+            </div>
+            <div class="box mb-3 shadow-sm rounded bg-white view-box overflow-hidden">
+                <div class="box-title border-bottom p-3">
+                    <h6 class="m-0">Experience</h6>
+                </div>
+                @if (Model.Experiences.Count > 0)
+                {
+                    foreach (var item in Model.Experiences)
+                    {
+                        <div class=" border-bottom">
+                            <h6 class="font-weight-bold text-dark">@item.Title  (<small>@item.StartDate.ToShortDateString() - @item.EndDate.ToShortDateString()</small>)</h6>
+                            <p class="mb-0 text-muted"><b>Company:</b> @item.CompanyName</p>
+                            <p class="mb-0 text-muted"><b>Location:</b> @item.Location</p>
+                        </div>
+                    }
+
+                }
+                else
+                {
+                    <p>There is no experience added yet.</p>
+                }
+                <div class="p-3">
+                    <button type="button" class="btn btn-outline-primary pl-4 pr-4" data-toggle="modal" data-target="#experienceModal"> Add Experience </button>
+                </div>
+            </div>
+            <div class="box mb-3 shadow-sm rounded bg-white view-box overflow-hidden">
+                <div class="box-title border-bottom p-3">
+                    <h6 class="m-0">Eductaion</h6>
+                </div>
+
+
+                @if (Model.Educations.Count > 0)
+                {
+                    foreach (var item in Model.Educations)
+                    {
+                        <div class=" border-bottom">
+                            <h6 class="font-weight-bold text-dark">@item.School  (<small>@item.StartDate.Value.ToShortDateString() - @item.EndDate.Value.ToShortDateString()</small>)</h6>
+                            <p class="mb-0 text-muted"><b>Degree:</b> @item.Degree</p>
+                            <p class="mb-0 text-muted"><b>Grade:</b> @item.Grade</p>
+                        </div>
+                    }
+
+                }
+                else
+                {
+                    <p>There is no qualification added yet.</p>
+                }
+                <div class="p-3">
+                    <button type="button" class="btn btn-outline-primary pl-4 pr-4" data-toggle="modal" data-target="#educationModal"> Add Education </button>
+                </div>
+            </div>
+            <div class="box mb-3 shadow-sm rounded bg-white view-box overflow-hidden">
+                <div class="box-title border-bottom p-3">
+                    <h6 class="m-0">Certifications</h6>
+                </div>
+                @if (Model.LicenseOfCertifications.Count > 0)
+                {
+                    foreach (var item in Model.LicenseOfCertifications)
+                    {
+                        <div class=" border-bottom">
+                            <h6 class="font-weight-bold text-dark">@item.Name  (<small>@item.IssueDate.ToShortDateString() - @item.ExpirationDate.ToShortDateString()</small>)</h6>
+                            <p class="mb-0 text-muted"><b>Issuing Organization:</b> @item.IssuingOrganization</p>
+                            <p class="mb-0 text-muted"><b>Certificate Url:</b> @item.CredentialUrl</p>
+                        </div>
+                    }
+
+                }
+                else
+                {
+                    <p>There is no certification added yet.</p>
+                }
+                <div class="p-3">
+                    <button type="button" class="btn btn-outline-primary pl-4 pr-4" data-toggle="modal" data-target="#certificateModal"> Add Certification </button>
+                </div>
+            </div>
+            <div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
+                <img src="/assets/img/job1.png" class="img-fluid" alt="Responsive image">
+                <div class="p-3 border-bottom">
+                    <h6 class="font-weight-bold text-dark">Are you hiring?</h6>
+                    <p class="mb-0 text-muted">Looking for talent?</p>
+                </div>
+                <div class="p-3">
+                    <button type="button" class="btn btn-outline-primary pl-4 pr-4" data-toggle="modal" data-target="#jobModal"> POST A JOB </button>
+                </div>
+            </div>
+    </aside>
+    <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12">
+        <div class="box shadow-sm border rounded bg-white mb-3">
+            <div class="box-title border-bottom p-3">
+                <h6 class="m-0">People you might know</h6>
+            </div>
+            <div class="box-body p-3">
+                @if (users.Count>0)
+                {
+                    foreach (var item in users)
+                    {
+                        <div class="d-flex align-items-center osahan-post-header mb-3 people-list">
+                    <div class="dropdown-list-image mr-3">
+                        <img class="rounded-circle" src="@item.ProfileImage" alt>
+                        <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold mr-2">
+                        <div class="text-truncate">@item.FirstName @item.LastName</div>
+                        <div class="small text-gray-500">
+                            @item.Title
+                        </div>
+                    </div>
+                    <span class="ml-auto">
+                        <button type="button" class="btn btn-light btn-sm" onclick="SendRequest('@Model.Id','@item.Id')"><i class="feather-user-plus"></i></button>
+                    </span>
+                </div>
+                    }
+                }
+            </div>
+        </div>
+        <div class="box shadow-sm border rounded bg-white mb-3">
+            <div class="box-title border-bottom p-3">
+                <h6 class="m-0">
+                    Jobs
+                </h6>
+            </div>
+            <div class="box-body p-3">
+                 @if (jobs.Count > 0)
+                {
+                    foreach (var item in jobs)
+                    {
+                            <a href="javascript:void()">
+                                <div class="shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3">
+                                    <div class="d-flex align-items-center p-3 job-item-header">
+                                        <div class="overflow-hidden mr-2">
+                                            <h6 class="font-weight-bold text-dark mb-0 text-truncate">@item.Title</h6>
+                                            <div class="text-truncate text-primary">@item.CompanyName</div>
+                                            <div class="small text-gray-500"><i class="feather-map-pin"></i> @item.Location</div>
+                                        </div>
+                                        <img class="img-fluid ml-auto" src="https://source.unsplash.com/random/150x150?person" alt>
+                                    </div>
+                                    <div class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+                                        <div class="overlap-rounded-circle d-flex">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p1.png" alt data-original-title="Sophia Lee">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p2.png" alt data-original-title="John Doe">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p3.png" alt data-original-title="Julia Cox">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p4.png" alt data-original-title="Robert Cook">
+                                            <img class="rounded-circle shadow-sm" data-toggle="tooltip" data-placement="top" title src="/assets/img/p5.png" alt data-original-title="Sophia Lee">
+                                        </div>
+                                        <span class="font-weight-bold text-primary">18 connections</span>
+                                    </div>
+                                    <div class="p-3 job-item-footer">
+                                        <small class="text-gray-500"><i class="feather-clock"></i> Posted: @item.CreatedDate.ToShortDateString()</small>
+                                    </div>
+                                </div>
+                            </a>
+                        break;
+
+                    }
+                }
+            </div>
+        </div>
+    </aside>
+</div>
+<div class="modal fade" id="professionModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form id="professionForm" asp-action="PostProfession" asp-controller="Home" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">What is your profession and designation?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="profession" class="col-form-label">Profession and designation:</label>
+                        <input type="text" class="form-control" name="Title" data-rule-required="true" id="profession" placeholder="e.g IT- Software Engineer">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal fade" id="educationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form id="educationForm" asp-action="PostEducation" asp-controller="Home" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add your education history</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="UserId" value="@Model.Id" />
+                    <div class="form-group">
+                        <label class="col-form-label">School:</label>
+                        <input type="text" class="form-control" name="School" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Degree:</label>
+                        <input type="text" class="form-control" name="Degree" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Start Date:</label>
+                        <input type="date" class="form-control" name="StartDate" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">End Date:</label>
+                        <input type="date" class="form-control" name="EndDate" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Grade:</label>
+                        <input type="text" class="form-control" name="Grade" data-rule-required="true">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal fade" id="experienceModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form id="experienceForm" asp-action="PostExperience" asp-controller="Home" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add your carrier history</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="UserId" value="@Model.Id" />
+                    <div class="form-group">
+                        <label class="col-form-label">Designation:</label>
+                        <input type="text" class="form-control" name="Title" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Company Name:</label>
+                        <input type="text" class="form-control" name="CompanyName" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Location:</label>
+                        <input type="text" class="form-control" name="Location" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Start Date:</label>
+                        <input type="date" class="form-control" name="StartDate" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">End Date:</label>
+                        <input type="date" class="form-control" name="EndDate" data-rule-required="true">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal fade" id="certificateModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form id="certificateForm" asp-action="PostCertificate" asp-controller="Home" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add your certifications</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="UserId" value="@Model.Id" />
+                    <div class="form-group">
+                        <label class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" name="Name" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Issuing Organization:</label>
+                        <input type="text" class="form-control" name="IssuingOrganization" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Certificate URL:</label>
+                        <input type="text" class="form-control" name="CredentialUrl" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Issue Date:</label>
+                        <input type="date" class="form-control" name="IssueDate" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Expiration Date:</label>
+                        <input type="date" class="form-control" name="ExpirationDate" data-rule-required="true">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal fade" id="jobModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form id="jobForm" asp-action="PostJob" asp-controller="Home" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Post a job</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="UserId" value="@Model.Id" />
+                    <div class="form-group">
+                        <label class="col-form-label">Title:</label>
+                        <input type="text" class="form-control" name="Name" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Company Name:</label>
+                        <input type="text" class="form-control" name="CompanyName" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Designation:</label>
+                        <input type="text" class="form-control" name="Designation" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Location:</label>
+                        <input type="text" class="form-control" name="Location" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Salary:</label>
+                        <input type="text" class="form-control" name="Salary" data-rule-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Description:</label>
+                        <textarea class="form-control" name="Description" data-rule-required="true"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+    $('#professionForm').validate();
+    $('#educationForm').validate();
+    $('#experienceForm').validate();
+    $('#certificateForm').validate();
+    $('#jobForm').validate();
+    $('#postForm').validate();
+
+    function SendRequest(UserId,FriendId){
+        var _url = '/Home/SendRequest';
+
+        $.ajax({
+            url: _url,
+            type: 'POST',
+            data: {UserId:UserId,FriendId:FriendId},
+            success: function (result) {
+                $(holder).append(
+                    '<div class="upload-loader"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>'
+                );
+            },
+            error: function (jqXHR) {
+                $(wrapper).append(
+                    '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There is an error while uploading! Please try again later.</div>'
+                );
+            },
+            complete: function (jqXHR, status) {
+                $(wrapper).append(
+                    '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> Profile image updated successfully.</div>'
+                );
+            }
+        });
+    }
+</script>
+
